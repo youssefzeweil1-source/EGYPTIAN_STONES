@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>موسوعة الأحجار في مصر</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #1f2937;
+      --line: #334155;
+      --txt: #f8fafc;
+      --muted: #cbd5e1;
+      --ok: #86efac;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Cairo", "Tajawal", system-ui, sans-serif;
+      background: radial-gradient(circle at top right, #1e293b 0%, var(--bg) 50%, #020617 100%);
+      color: var(--txt);
+      line-height: 1.8;
+    }
+    .container { width: min(1200px, 93%); margin: auto; padding: 1.5rem 0 3rem; }
+    .hero {
+      background: linear-gradient(140deg, rgba(34,211,238,.14), rgba(167,139,250,.2));
+      border: 1px solid rgba(148,163,184,.35);
+      border-radius: 18px;
+      padding: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    h1,h2,h3{margin:.1rem 0 .6rem; line-height:1.35}
+    h1{font-size:clamp(1.4rem,3vw,2rem)}
+    .meta { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:.6rem; margin-top:.8rem; }
+    .meta div { background:rgba(2,6,23,.5); border:1px solid var(--line); border-radius:10px; padding:.6rem .7rem; color:var(--muted); font-size:.9rem; }
+
+    .section { margin-top: 1.2rem; }
+    .section > h2 {
+      background: rgba(30, 41, 59, .55);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: .6rem .8rem;
+      color: #bae6fd;
+      font-size: 1.15rem;
+    }
+
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:.85rem; margin-top:.7rem; }
+    .card {
+      background: linear-gradient(180deg, rgba(31,41,55,.9), rgba(15,23,42,.95));
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      padding: .75rem;
+    }
+    .card h3 { font-size: 1.02rem; color:#e0f2fe; }
+    .stone-img {
+      width:100%; height:160px; object-fit:cover;
+      border-radius:10px; border:1px solid rgba(100,116,139,.5); margin-bottom:.5rem;
+      background:#0f172a;
+    }
+    .row { display:flex; justify-content:space-between; gap:.5rem; padding:.15rem 0; border-bottom:1px dashed rgba(100,116,139,.3); font-size:.9rem; }
+    .row:last-child{border-bottom:0}
+    .k { color: var(--muted); }
+    .v { color: #f8fafc; text-align:left; }
+    .price { margin-top:.45rem; background:rgba(2,6,23,.45); border:1px solid rgba(56,189,248,.3); border-radius:9px; padding:.45rem .55rem; font-size:.88rem; }
+    .price b { color: var(--ok); }
+
+    table { width:100%; border-collapse:collapse; margin-top:.8rem; background:rgba(15,23,42,.58); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+    th,td { padding:.6rem; border-bottom:1px solid rgba(71,85,105,.6); text-align:right; font-size:.9rem; }
+    th { background: rgba(34,211,238,.12); color:#cffafe; }
+
+    footer { margin-top:1.3rem; background:rgba(2,6,23,.55); border:1px solid var(--line); border-radius:12px; padding:.8rem; font-size:.86rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>موسوعة الأحجار في مصر 🇪🇬</h1>
+      <div class="meta">
+        <div><strong>التحديث:</strong> فبراير 2026</div>
+        <div><strong>التسعير:</strong> جنيه مصري (EGP)</div>
+        <div><strong>الخام:</strong> غالبًا بالكيلو</div>
+        <div><strong>الفص:</strong> غالبًا بالقيراط</div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>قسم العقيق (كل الأنواع المحلية)</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/7/72/Agate_1.jpg" alt="العقيق اليماني" loading="lazy">
+          <h3>العقيق اليماني</h3>
+          <div class="row"><span class="k">اللون الشائع</span><span class="v">أحمر كبدي / بني</span></div>
+          <div class="row"><span class="k">الوجود بالسوق</span><span class="v">مرتفع</span></div>
+          <div class="price">خام: <b>500 – 2,200</b> / كجم<br>فص: <b>180 – 2,000</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/5/56/Banded_Agate.jpg" alt="العقيق السليماني" loading="lazy">
+          <h3>العقيق السليماني</h3>
+          <div class="row"><span class="k">اللون الشائع</span><span class="v">مخطط أسود/أبيض أو بني</span></div>
+          <div class="row"><span class="k">الوجود بالسوق</span><span class="v">مرتفع</span></div>
+          <div class="price">خام: <b>450 – 1,800</b> / كجم<br>فص: <b>120 – 1,500</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Carnelian_rough.jpg" alt="العقيق الكبدي" loading="lazy">
+          <h3>العقيق الكبدي</h3>
+          <div class="row"><span class="k">اللون الشائع</span><span class="v">أحمر داكن</span></div>
+          <div class="row"><span class="k">الوجود بالسوق</span><span class="v">متوسط</span></div>
+          <div class="price">خام: <b>420 – 1,600</b> / كجم<br>فص: <b>120 – 1,200</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Carnelian_rough.jpg" alt="العقيق الأحمر" loading="lazy">
+          <h3>العقيق الأحمر</h3>
+          <div class="row"><span class="k">اللون الشائع</span><span class="v">أحمر / برتقالي</span></div>
+          <div class="row"><span class="k">الوجود بالسوق</span><span class="v">مرتفع</span></div>
+          <div class="price">خام: <b>350 – 1,300</b> / كجم<br>فص: <b>80 – 900</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Yellow_agate.jpg" alt="العقيق الأصفر" loading="lazy">
+          <h3>العقيق الأصفر</h3>
+          <div class="row"><span class="k">اللون الشائع</span><span class="v">أصفر عسلي</span></div>
+          <div class="row"><span class="k">الوجود بالسوق</span><span class="v">متوسط</span></div>
+          <div class="price">خام: <b>380 – 1,450</b> / كجم<br>فص: <b>90 – 1,000</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/White_agate.jpg" alt="العقيق الأبيض" loading="lazy">
+          <h3>العقيق الأبيض</h3>
+          <div class="row"><span class="k">اللون الشائع</span><span class="v">أبيض لبني</span></div>
+          <div class="row"><span class="k">الوجود بالسوق</span><span class="v">متوسط</span></div>
+          <div class="price">خام: <b>300 – 1,200</b> / كجم<br>فص: <b>70 – 850</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Black_agate.jpg" alt="العقيق الأسود" loading="lazy">
+          <h3>العقيق الأسود</h3>
+          <div class="row"><span class="k">اللون الشائع</span><span class="v">أسود / رمادي داكن</span></div>
+          <div class="row"><span class="k">الوجود بالسوق</span><span class="v">متوسط</span></div>
+          <div class="price">خام: <b>400 – 1,700</b> / كجم<br>فص: <b>110 – 1,400</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Moss_agate_cabochon.jpg" alt="العقيق الشجري" loading="lazy">
+          <h3>العقيق الشجري</h3>
+          <div class="row"><span class="k">اللون الشائع</span><span class="v">أبيض بعروق نباتية</span></div>
+          <div class="row"><span class="k">الوجود بالسوق</span><span class="v">متوسط/نادر</span></div>
+          <div class="price">خام: <b>500 – 2,100</b> / كجم<br>فص: <b>180 – 2,200</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Moss_agate_cabochon.jpg" alt="العقيق الطحلبي" loading="lazy">
+          <h3>العقيق الطحلبي</h3>
+          <div class="row"><span class="k">اللون الشائع</span><span class="v">شفاف بعروق خضراء</span></div>
+          <div class="row"><span class="k">الوجود بالسوق</span><span class="v">متوسط/نادر</span></div>
+          <div class="price">خام: <b>550 – 2,300</b> / كجم<br>فص: <b>200 – 2,500</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Plume_Agate.jpg" alt="العقيق المزهر" loading="lazy">
+          <h3>العقيق المزهر</h3>
+          <div class="row"><span class="k">اللون الشائع</span><span class="v">نقوش تشبه الزهور</span></div>
+          <div class="row"><span class="k">الوجود بالسوق</span><span class="v">نادر</span></div>
+          <div class="price">خام: <b>700 – 3,100</b> / كجم<br>فص: <b>280 – 3,000</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/5/56/Banded_Agate.jpg" alt="العقيق المخطط" loading="lazy">
+          <h3>العقيق المخطط</h3>
+          <div class="row"><span class="k">اللون الشائع</span><span class="v">طبقات وخطوط متعددة</span></div>
+          <div class="row"><span class="k">الوجود بالسوق</span><span class="v">مرتفع</span></div>
+          <div class="price">خام: <b>380 – 1,450</b> / كجم<br>فص: <b>100 – 1,200</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Onyx-marble.jpg" alt="العقيق الجزع" loading="lazy">
+          <h3>العقيق الجزع</h3>
+          <div class="row"><span class="k">اللون الشائع</span><span class="v">أسود مع طبقات بيضاء</span></div>
+          <div class="row"><span class="k">الوجود بالسوق</span><span class="v">متوسط</span></div>
+          <div class="price">خام: <b>420 – 1,900</b> / كجم<br>فص: <b>130 – 1,700</b> / قيراط</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>قسم الأحجار الشائعة</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/4/45/Red_jasper.jpg" alt="اليشب" loading="lazy">
+          <h3>اليشب</h3>
+          <div class="row"><span class="k">أماكن الوجود</span><span class="v">الصحراء الشرقية وسيناء</span></div>
+          <div class="row"><span class="k">الألوان</span><span class="v">أحمر، أخضر، أصفر</span></div>
+          <div class="price">خام: <b>280 – 1,050</b> / كجم<br>فص: <b>60 – 480</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/8/88/Quartz%2C_Tibet.jpg" alt="الكوارتز" loading="lazy">
+          <h3>الكوارتز الشفاف / الدخاني</h3>
+          <div class="row"><span class="k">أماكن الوجود</span><span class="v">جبال البحر الأحمر وسيناء</span></div>
+          <div class="row"><span class="k">الصلادة</span><span class="v">7 موهس</span></div>
+          <div class="price">خام: <b>220 – 1,600</b> / كجم<br>فص: <b>50 – 900</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Moonstone-India.jpg" alt="حجر القمر" loading="lazy">
+          <h3>الفلسبار / حجر القمر</h3>
+          <div class="row"><span class="k">أماكن الوجود</span><span class="v">الصحراء الشرقية</span></div>
+          <div class="row"><span class="k">الميزة</span><span class="v">لمعان لبني</span></div>
+          <div class="price">خام: <b>300 – 1,450</b> / كجم<br>فص: <b>90 – 1,100</b> / قيراط</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>قسم الأحجار المتوسطة</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Emerald_rough.jpg" alt="الزمرد" loading="lazy">
+          <h3>الزمرد المصري</h3>
+          <div class="row"><span class="k">أماكن الوجود</span><span class="v">مناطق قريبة من وادي سكيت</span></div>
+          <div class="row"><span class="k">اللون</span><span class="v">أخضر بدرجات متعددة</span></div>
+          <div class="price">خام: <b>2,200 – 16,000</b> / كجم<br>فص: <b>1,000 – 18,000</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/PeridotUSGOV.jpg" alt="الزبرجد" loading="lazy">
+          <h3>الزبرجد</h3>
+          <div class="row"><span class="k">أماكن الوجود</span><span class="v">جزيرة الزبرجد بالبحر الأحمر</span></div>
+          <div class="row"><span class="k">اللون</span><span class="v">أخضر زيتوني</span></div>
+          <div class="price">خام: <b>2,800 – 20,000</b> / كجم<br>فص: <b>1,300 – 13,000</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Tourmaline-347143.jpg" alt="التورمالين" loading="lazy">
+          <h3>التورمالين</h3>
+          <div class="row"><span class="k">أماكن الوجود</span><span class="v">جيوب جرانيتية بالصحراء الشرقية</span></div>
+          <div class="row"><span class="k">الألوان</span><span class="v">أخضر، وردي، ثنائي اللون</span></div>
+          <div class="price">خام: <b>1,500 – 12,000</b> / كجم<br>فص: <b>700 – 9,500</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Topaz_%28z%C3%ADrcon%29.jpg" alt="التوباز" loading="lazy">
+          <h3>التوباز</h3>
+          <div class="row"><span class="k">أماكن الوجود</span><span class="v">عروق بيجماتيت في البحر الأحمر</span></div>
+          <div class="row"><span class="k">الألوان</span><span class="v">عديم، ذهبي، أزرق</span></div>
+          <div class="price">خام: <b>1,200 – 9,000</b> / كجم<br>فص: <b>550 – 8,500</b> / قيراط</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>قسم الأحجار النادرة</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Opal-209130.jpg" alt="الأوبال" loading="lazy">
+          <h3>الأوبال النفيس</h3>
+          <div class="row"><span class="k">الندرة</span><span class="v">نادر جدًا</span></div>
+          <div class="row"><span class="k">التواجد</span><span class="v">محدود جدًا محليًا</span></div>
+          <div class="price">خام: <b>2,500 – 20,000</b> / قطعة<br>فص: <b>1,500 – 40,000</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Alexandrite-crystal.jpg" alt="الألكسندريت" loading="lazy">
+          <h3>الألكسندريت</h3>
+          <div class="row"><span class="k">الندرة</span><span class="v">نادر جدًا</span></div>
+          <div class="row"><span class="k">الميزة</span><span class="v">تغير لون واضح</span></div>
+          <div class="price">خام: <b>غير مستقر</b><br>فص: <b>15,000 – 180,000</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Demantoid.jpg" alt="ديمانتويد" loading="lazy">
+          <h3>جارنيت ديمانتويد</h3>
+          <div class="row"><span class="k">الندرة</span><span class="v">نادر</span></div>
+          <div class="row"><span class="k">الميزة</span><span class="v">لمعان قوي ولون أخضر</span></div>
+          <div class="price">خام: <b>4,000 – 22,000</b> / عينة<br>فص: <b>4,500 – 60,000</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Kunzite_crystal.jpg" alt="الكونزيت" loading="lazy">
+          <h3>الكونزيت</h3>
+          <div class="row"><span class="k">الندرة</span><span class="v">نادر</span></div>
+          <div class="row"><span class="k">الميزة</span><span class="v">حجم كبير لكن حساس للضوء</span></div>
+          <div class="price">خام: <b>2,000 – 12,000</b> / كجم<br>فص: <b>1,200 – 14,000</b> / قيراط</div>
+        </article>
+
+        <article class="card">
+          <img class="stone-img" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Spinel-tanzania-03.jpg" alt="السبينيل" loading="lazy">
+          <h3>السبينيل الأحمر</h3>
+          <div class="row"><span class="k">الندرة</span><span class="v">نادر</span></div>
+          <div class="row"><span class="k">الميزة</span><span class="v">لون دموي وشفافية عالية</span></div>
+          <div class="price">خام: <b>3,500 – 15,000</b> / عينة<br>فص: <b>2,500 – 55,000</b> / قيراط</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>ملخص التسعير حسب الفئة</h2>
+      <table>
+        <thead><tr><th>الفئة</th><th>متوسط الخام</th><th>متوسط الفص</th><th>ملاحظة</th></tr></thead>
+        <tbody>
+          <tr><td>العقيق</td><td>300 – 3,100 / كجم</td><td>70 – 3,000 / قيراط</td><td>يتأثر بالنقوش والندرة</td></tr>
+          <tr><td>شائع</td><td>220 – 1,600 / كجم</td><td>50 – 1,100 / قيراط</td><td>سهولة التوفر</td></tr>
+          <tr><td>متوسط</td><td>1,200 – 20,000 / كجم</td><td>550 – 18,000 / قيراط</td><td>تذبذب متوسط</td></tr>
+          <tr><td>نادر</td><td>2,500 – 22,000 / قطعة أو عينة</td><td>1,500 – 180,000 / قيراط</td><td>يتطلب فحص معتمد</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      الأسعار تقريبية في السوق المحلي وتتغير حسب النقاء، الوزن، المعالجة، وشهادة الفحص.
+    </footer>
+  </div>
+</body>
+</html>
